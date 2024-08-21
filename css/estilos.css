@@ -1,0 +1,397 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+}
+img{
+    max-width: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    background-color: rgba(138, 173, 229, 0.928);
+}
+nav, section{
+    text-align: center;
+    width: 85%;
+    margin: 0em auto;
+    font-family: Arial, sans-serif;
+}
+nav{
+    background: linear-gradient(blue, rgb(231, 76, 102));
+}
+.menu a{
+    color: black;
+    text-align: center;
+    padding: 1em 1em;
+    text-decoration: none;
+    display: block;
+    border-bottom: 2px black solid;
+    font-size: 1.5em;
+}
+.menu a:hover{
+    background-color: burlywood;
+    transform: scale(1.15);
+}
+.menu-icon{
+    display: none;
+    font-size: 2em;
+    padding: 0.9em 1em;
+    cursor: pointer;
+    color: black;
+}
+.menu-items{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+.menu-items li{
+    flex: 1;
+    margin: 0em 1em;
+}
+.menu-items i{
+    color: rgb(193, 24, 24);
+}
+#menu-toggle{
+    display: none;
+}
+.activa{
+    background-color: green;
+}
+.menu{
+    overflow: hidden;
+    margin: 0em auto;
+}
+.logo{
+    display: inline-block;
+}
+#titulo{
+    padding: 10em 0em;
+}
+.titulo img{
+    width: 30%;
+}
+h1{
+    font-size: 4em;
+    color: red;
+    font-weight: bold;
+    margin-left: -120px;
+}
+#introduccion{
+    padding-bottom: 7em;
+}
+.introduccion{
+    border-bottom: 6px black solid;
+    border-right: 10px black solid;
+}
+.introduccion h3{
+    font-size: 3em;
+    padding: .5em 0em;
+}
+.introduccion p{
+    font-size: 2em;
+    font-weight: bold;
+    padding: .5em 0em;
+}
+#redes{
+    font-size: 3em;
+    background: linear-gradient(blue,  rgb(214, 14, 48));
+    text-align: center;
+    margin-top: auto;
+}
+.redes i{
+    margin: 0em .5em;
+    padding: 1.5em 0em;
+    color: rgb(11, 130, 17);
+}
+.redes i:hover{
+    transform: scale(1.25);
+    color: red;
+}
+#politicas{
+    padding: 6em 0em;
+}
+.poli{
+    width: 40%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.politicas3{
+    padding-bottom: 5em;
+}
+.titulo_poli{
+    text-align: left;
+    font-size: 1.5em;
+    color: rgb(64, 63, 63);
+}
+.img1{
+    width: 55%;
+}
+.img1:hover{
+    transform: scale(1.15);
+}
+.poli2{
+    padding: 3em 0em;
+}
+.parf{
+    text-align: left;
+}
+#servicios{
+    padding: 4em 0em;
+}
+.servicios{
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+}
+.margen-servicios{
+    margin-left: 1.5em;
+}
+.items li{
+    list-style-type: none;
+    line-height: 1.7em;
+    font-size: 1.2em;
+    text-align: left;
+}
+.titulo_servi{
+    padding: 1.5em 0em;
+    font-size: 1.5em;
+}
+#clientes{
+    padding: 4em 0em;
+}
+.imgs{
+    display: flex;
+    flex-direction: row;
+}
+.imgs img{
+    width: 25%;
+    margin: 1.5em 3em;
+}
+#clientes img:hover{
+    box-shadow: 10px 5px 5px  rgb(214, 14, 48);
+    transform: scale(1.15);
+}
+.titulo_cliente{
+    padding-top: 2em;
+    padding-bottom: 4.5em;
+    font-size: 1.5em;
+}
+#contacto{
+    padding: 4em 0em;
+}
+.contacto_1{
+    padding: 3em 0em;
+}
+h3{
+    padding: 1em 0em;
+}
+.contacto_0{
+    text-align: left;
+    line-height: 2em;
+}
+.casillas{
+    margin: 1em 0em;
+}
+.boton{
+    padding: 1.5em 0em;
+}
+.boton input{
+    padding: 1em 1.5em;
+    background-color: chartreuse;
+    border: none;
+    box-shadow: 10px 5px 5px black;
+}
+iframe{
+    width: 400px; 
+    height: 226px;
+    border-radius: 1em;
+}
+textarea{
+    width: 367px;
+    height: 100px;
+}
+input, textarea{
+    border-radius: 1em;
+    padding: 1em 1em;
+}
+
+@media screen and (max-width: 599px) {
+    .menu a{
+        font-size: 1em;
+    }
+    .menu-items{
+        flex-direction: column;
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+        text-align: left;
+    }
+    #menu-toggle:checked + .menu-icon + .menu-items{
+        display: flex;
+    }
+    .logo{
+        display: block;
+        text-align: center;
+        font-size: 2em;
+        margin-left: 0px;
+    }
+    .titulo img{
+        width: 100%;
+        margin: 1em 0em;
+    }
+    .introduccion h3{
+        font-size: 1.5em;
+        padding: .5em 0em;
+    }
+    .introduccion p{
+        font-size: 1em;
+        font-weight: none;
+        padding: .5em 0em;
+    }
+    .redes i{
+        font-size: .5em;
+    }
+    .poli{
+        width: 90%;
+        display: block;
+        text-align: center;
+    }
+    .politicas3{
+        padding-bottom: 2em;
+    }
+    .img1{
+        width: 80%;
+    }
+    .parf{
+        padding-bottom: 1em;
+        text-align: left;
+    }
+    .titulo_poli{
+        text-align: center;
+        padding: 1em 0em;
+    }
+    .poli2{
+        text-align: center;
+    }
+    .servicios{
+        width: 89%;
+        display: block;
+    }
+    .items li{
+        font-size: .9em;
+    }
+    .titulo_servi{
+        font-size: 1.2em;
+    }
+    .imgs{
+        display: flex;
+        flex-direction: column;
+    }
+    #clientes{
+        padding: 1em 0em;
+    }
+    .imgs img{
+        width: 95%;
+        margin: .7em .5em;
+    }
+    .titulo_cliente{
+        padding: 1em 0em;
+        font-size: 1em;
+    }
+    #contacto{
+        padding: 1em 0em;
+    }
+    .contacto_0{
+        font-size: .8em;
+    }
+    iframe{
+        width: 200px; 
+        height: 126px;
+    }
+    textarea {
+        resize: none;
+    }
+    textarea{
+        width: 180px;
+        height: 100px;
+    }
+
+}
+@media screen and (min-width: 600px ) and (max-width: 1000px) {
+    .menu-items li{
+        margin: 0em 0.5em;
+    }
+    .menu a{
+        padding: .5em .5em;
+        text-decoration: none;
+        border-bottom: 1px black solid;
+        font-size: 1.2em;
+    }
+    .titulo img{
+        width: 100%;
+        margin: 1em 0em;
+    }
+    .logo{
+        display: block;
+        text-align: center;
+        font-size: 4em;
+        margin-left: 0px;
+    }
+    .introduccion h3{
+        font-size: 2.5em;
+        padding: .5em 0em;
+    }
+    .introduccion p{
+        font-size: 2em;
+        font-weight: none;
+        padding: .5em 0em;
+    }
+    .poli{
+        width: 90%;
+        display: block;
+        text-align: center;
+    }
+    .politicas3{
+        padding-bottom: 2em;
+    }
+    .poli2{
+        text-align: center;
+    }
+    .img2{
+        text-align: center;
+    }
+    .img1{
+        width: 80%;
+    }
+    .titulo_poli{
+        text-align: center;
+        padding: .5em 0em;
+    }
+    .parf{
+        padding-bottom: 1em;
+        text-align: left;
+    }
+    .servicios{
+        width: 89%;
+        display: block;
+    }
+    #clientes{
+        padding: 2em 0em;
+    }
+    .imgs img{
+        width: 25%;
+        padding: 1em 1.5em;
+    }
+    .titulo_cliente{
+        padding: 1.5em 0em;
+        font-size: 1.2em;
+    }
+    
+}
